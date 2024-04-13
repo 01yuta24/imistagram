@@ -123,6 +123,7 @@ aside{
 }
 
 .main{
+    overflow: scroll;
     display: flex;
     width: 100%;
     justify-content: center;
