@@ -213,3 +213,7 @@ input{
   .iphone-pic:nth-of-type(5) {
     animation-delay: 20s;
   }
+
+  .error{
+    color: red;
+  }
