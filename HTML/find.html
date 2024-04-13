@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Imistagram</title>
+    <script src="../JS/moment.js"></script>
+    <script src="../JS/dataGenerator.js"></script>
+    <script src="../JS/link.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+
+    <div class="flex">
+      <header class="header">
+        <div class="header-container">
+          <h1 class="header-title">Imistagram</h1>
+          <div class="header-menu">
+            <div class="header-menu-main">
+              <div class="header-icon home-btn" id="home">
+                  <i class="fa-solid fa-person-shelter header-i"></i>
+                  <span class="header-span">ホーム</span>
+              </div>
+              <div class="header-icon search-btn" id="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span class="header-span">検索</span>
+              </div>
+              <div class="header-icon find-btn" id="find">
+                  <i class="fa-regular fa-compass"></i>
+                  <span class="header-span">発見</span>
+              </div>
+              <div class="header-icon movie-btn" id="movie">
+                <i class="fa-solid fa-clapperboard"></i>
+                <span class="header-span">リール動画</span>
+              </div>
+              <div class="header-icon message-btn" id="message">
+                <i class="fa-regular fa-comment-dots"></i>
+                <span class="header-span">メッセージ</span>
+              </div>
+              <div class="header-icon heart-btn" id="heart">
+                <i class="fa-regular fa-heart"></i>
+                <span class="header-span">お知らせ</span>
+              </div>
+              <div class="header-icon btn show-modal">
+                <!-- <button class="btn show-modal"> -->
+                  <i class="fa-regular fa-square-plus"></i>
+                  <span class="header-span">作成</span>
+                <!-- </button> -->
+              </div>
+              <div class="header-icon profile-btn" id="profile">
+                <div class="header-profile-container">
+                  <img class="header-profile-icon" src="" alt="me"></img>
+                  <div class="header-profile-icon-back"></div>
+                </div>
+                <span class="header-span header-span-profile">プロフィール</span>
+              </div>
+            </div>
+            <div class="header-other">
+              <div class="header-icon">
+                <i class="fa-solid fa-at"></i>
+                <span class="header-span">Threads</span>
+              </div>
+              <div class="header-icon">
+                <i class="fa-solid fa-bars"></i>
+                <span class="header-span">その他</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="find-main">
+        <div class="find-main-container">
+          <img src="../images/baby/image01.gif" alt="">
+          <img src="../images/baby/image02.gif" alt="">
+          <img src="../images/baby/image03.gif" alt="">
+          <img src="../images/baby/image04.gif" alt="">
+          <img src="../images/baby/image05.gif" alt="">
+          <img src="../images/baby/image06.gif" alt="">
+          <img src="../images/baby/image07.gif" alt="">
+          <img src="../images/baby/image08.gif" alt="">
+          <img src="../images/baby/image09.gif" alt="">
+          <img src="../images/baby/image09.gif" alt="">
+          <img src="../images/baby/image10.gif" alt="">
+          <img src="../images/baby/image11.gif" alt="">
+          <img src="../images/baby/image12.gif" alt="">
+          <img src="../images/main-pic/image01.jpeg" alt="">
+          <img src="../images/main-pic/image02.jpeg" alt="">
+          <img src="../images/main-pic/image03.jpeg" alt="">
+          <img src="../images/main-pic/image04.jpeg" alt="">
+          <img src="../images/main-pic/image05.jpeg" alt="">
+          <img src="../images/main-pic/image06.png" alt="">
+          <img src="../images/main-pic/image07.jpeg" alt="">
+          <img src="../images/main-pic/image08.jpeg" alt="">
+          <img src="../images/main-pic/image09.jpeg" alt="">
+          <img src="../images/main-pic/image10.jpeg" alt="">
+          <img src="../images/main-pic/image11.jpeg" alt="">
+          <img src="../images/main-pic/image12.jpeg" alt="">
+        </div>
+        <footer class="footer">
+            
+          <p class="footer-link-p">
+            <a class="footer-link" href="#">基本データ</a>
+            
+            <a class="footer-link" href="">ヘルプ</a>
+            ･
+            <a class="footer-link" href="">プレス</a>
+            ･
+            <a class="footer-link" href="">API</a>
+            ･
+            <a class="footer-link" href="">求人</a>
+            ･<br>
+            <a class="footer-link" href="">プライバシー</a>
+            ･
+            <a class="footer-link" href="">利用規約</a>
+            ･
+            <a class="footer-link" href="">所在地</a>
+            ･
+            <a class="footer-link" href="">言語</a>
+            ･
+            <a class="footer-link" href="">Meta認証</a>
+
+          </p>
+          <span class="footer-copyright">@ 2024 KIYOTAGRSAM FROM DIG</span>
+        </footer>
+      </main>
+    </div>
+  
+  </body>
+  <script src="https://kit.fontawesome.com/ac5282b9a0.js" crossorigin="anonymous"></script>
+  <script>
+    const imgPath = localStorage.getItem("img");
+    
+    const img = document.querySelector(".header-profile-icon");
+    const find = document.querySelector("#find");
+    
+    img.src = imgPath;
+    find.style.fontWeight = 900;
+
+  </script>
+  </html>

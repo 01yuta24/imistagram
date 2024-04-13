@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.profile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-main{
+    width: 935px;
+    background-color: white;
+}
+
+.my-icon{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid;
+    object-fit: cover;
+    margin:30px 80px;
+}
+
+.profile-1st-container{
+    display: flex;
+    margin: 30px 0;
+    align-items: center;
+}
+
+.profile-1st-text-container{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+.name-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.name-container > span{
+    border: 0px solid;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 5px;
+    background-color: #efefef;
+}
+
+.name{
+    font-size: 18px;
+}
+
+.new-container{
+    display: flex;
+    flex-flow: column;
+    margin: 0 80px 100px 80px;
+    width: 80px;
+    text-align: center;
+}
+.new-container > i{
+    color: #dfdfdf;
+    font-size: 80px;
+}
+
+.line{
+    border: 1px solid #dfdfdf;
+}
+
+.profile-3rd-container{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.profile-3rd-container i{
+    font-size: 14px;
+}
+
+.follow-container{
+    display: flex;
+    gap: 20px;
+}

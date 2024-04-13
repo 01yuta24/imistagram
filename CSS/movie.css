@@ -1,0 +1,41 @@
+.movie-main{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.movie-main-container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 450px;
+    height: 100%;
+    background-color: gray;
+}
+
+.movie-text-container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(40, 38, 38);
+    height: 500px;
+    color: white;
+    gap: 15px;
+}
+
+.movie-text-container > *{
+    font-size: 14px;
+    width: 80%;
+}
+
+.movie-text-container > span{
+    border: 1px solid;
+    border-radius: 8px;
+    width: 100px;
+}
+
+.movie-text-container > i{
+    font-size: 30px;
+}

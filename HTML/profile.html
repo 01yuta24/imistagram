@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Imistagram</title>
+    <script src="../JS/moment.js"></script>
+    <script src="../JS/dataGenerator.js"></script>
+    <script src="../JS/link.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/profile.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+
+    <div class="flex">
+      <header class="header">
+        <div class="header-container">
+          <h1 class="header-title">Imistagram</h1>
+          <div class="header-menu">
+            <div class="header-menu-main">
+              <div class="header-icon home-btn" id="home">
+                  <i class="fa-solid fa-person-shelter header-i"></i>
+                  <span class="header-span">ホーム</span>
+              </div>
+              <div class="header-icon search-btn" id="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span class="header-span">検索</span>
+              </div>
+              <div class="header-icon find-btn" id="find">
+                  <i class="fa-regular fa-compass"></i>
+                  <span class="header-span">発見</span>
+              </div>
+              <div class="header-icon movie-btn" id="movie">
+                <i class="fa-solid fa-clapperboard"></i>
+                <span class="header-span">リール動画</span>
+              </div>
+              <div class="header-icon message-btn" id="message">
+                <i class="fa-regular fa-comment-dots"></i>
+                <span class="header-span">メッセージ</span>
+              </div>
+              <div class="header-icon heart-btn" id="heart">
+                <i class="fa-regular fa-heart"></i>
+                <span class="header-span">お知らせ</span>
+              </div>
+              <div class="header-icon btn show-modal">
+                <!-- <button class="btn show-modal"> -->
+                  <i class="fa-regular fa-square-plus"></i>
+                  <span class="header-span">作成</span>
+                <!-- </button> -->
+              </div>
+              <div class="header-icon profile-btn" id="profile">
+                <div class="header-profile-container">
+                  <img class="header-profile-icon" src="" alt="me"></img>
+                  <div class="header-profile-icon-back"></div>
+                </div>
+                <span class="header-span header-span-profile">プロフィール</span>
+              </div>
+            </div>
+            <div class="header-other">
+              <div class="header-icon">
+                <i class="fa-solid fa-at"></i>
+                <span class="header-span">Threads</span>
+              </div>
+              <div class="header-icon">
+                <i class="fa-solid fa-bars"></i>
+                <span class="header-span">その他</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="profile">
+        <div class="profile-main">
+          <div class="profile-1st-container">
+            <img src="" alt="" class="my-icon">
+            <div class="profile-1st-text-container">
+              <div class="name-container">
+                <h1 class="name"></h1>
+                <span>プロフィールを編集</span>
+                <span>アーカイブを見る</span>
+                <i class="fa-solid fa-gear"></i>
+              </div>
+              <div class="follow-container">
+                <span>投稿1000件</span>
+                <span>フォロワー１億人</span>
+                <span>フォロー中０人</span>
+              </div>
+              <div class="text-container">
+                ランニング大好きなサラリーマンです。
+              </div>
+            </div>
+          </div>
+          <div class="profile-2nd-container">
+            <div class="new-container">
+              <i class="fa-solid fa-circle-plus"></i>
+              <span>新規</span>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="profile-3rd-container">
+            <div>
+              <i class="fa-solid fa-table-cells"></i>
+              <span>投稿</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-bookmark"></i>
+              <span>保存済み</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-user-tag"></i>
+              <span>タグ付けされてる人</span>
+            </div>
+          </div>
+          <div class="profile-4th-container">
+          </div>
+        </div>
+      </main>
+    </div>
+  
+  </body>
+  <script src="https://kit.fontawesome.com/ac5282b9a0.js" crossorigin="anonymous"></script>
+  <script>
+    const imgPath = localStorage.getItem("img");
+    const name = localStorage.getItem("username");
+    
+    const img = document.querySelector(".header-profile-icon");
+    const icon = document.querySelector(".my-icon");
+    const find = document.querySelector("#profile");
+    const nameEl = document.querySelector(".name");
+    
+    img.src = imgPath;
+    icon.src = imgPath;
+    profile.style.fontWeight = 900;
+    nameEl.innerHTML = name;
+  </script>
+  </html>

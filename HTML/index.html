@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Imistagram</title>
+    <script src="../JS/moment.js"></script>
+    <script src="../JS/dataGenerator.js"></script>
+    <script src="../JS/app.js"></script>
+    <script src="../JS/link.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+
+    <div class="flex">
+      <header class="header">
+        <div class="header-container">
+          <h1 class="header-title">Imistagram</h1>
+          <div class="header-menu">
+            <div class="header-menu-main">
+              <div class="header-icon home-btn" id="home">
+                  <i class="fa-solid fa-person-shelter header-i"></i>
+                  <span class="header-span">ホーム</span>
+              </div>
+              <div class="header-icon search-btn" id="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span class="header-span">検索</span>
+              </div>
+              <div class="header-icon find-btn" id="find">
+                  <i class="fa-regular fa-compass"></i>
+                  <span class="header-span">発見</span>
+              </div>
+              <div class="header-icon movie-btn" id="movie">
+                <i class="fa-solid fa-clapperboard"></i>
+                <span class="header-span">リール動画</span>
+              </div>
+              <div class="header-icon message-btn" id="message">
+                <i class="fa-regular fa-comment-dots"></i>
+                <span class="header-span">メッセージ</span>
+              </div>
+              <div class="header-icon heart-btn" id="heart">
+                <i class="fa-regular fa-heart"></i>
+                <span class="header-span">お知らせ</span>
+              </div>
+              <div class="header-icon btn show-modal">
+                <!-- <button class="btn show-modal"> -->
+                  <i class="fa-regular fa-square-plus"></i>
+                  <span class="header-span">作成</span>
+                <!-- </button> -->
+              </div>
+              <div class="header-icon profile-btn" id="profile">
+                <div class="header-profile-container">
+                  <img class="header-profile-icon" src="" alt="me"></img>
+                  <div class="header-profile-icon-back"></div>
+                </div>
+                <span class="header-span header-span-profile">プロフィール</span>
+              </div>
+            </div>
+            <div class="header-other">
+              <div class="header-icon">
+                <i class="fa-solid fa-at"></i>
+                <span class="header-span">Threads</span>
+              </div>
+              <div class="header-icon">
+                <i class="fa-solid fa-bars"></i>
+                <span class="header-span">その他</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main">
+        <main class="main-container">
+          <div class="members">
+
+            <div class="member-container">
+              <div class="member-profile-container">
+                <img class="member-profile-icon" src="" alt="me"></img>
+                <div class="member-profile-icon-back"></div>
+              </div>
+              <span class="member-profile-name"></span>
+            </div>
+            <div class="member-container">
+              <div class="member-profile-container">
+                <img class="member-profile-icon" src="../images/story/story01.png" alt="me"></img>
+                <div class="member-profile-icon-back"></div>
+              </div>
+              <span class="member-profile-name">Green</span>
+            </div>
+            <div class="member-container">
+              <div class="member-profile-container">
+                <img class="member-profile-icon" src="../images/story/story02.png" alt="me"></img>
+                <div class="member-profile-icon-back"></div>
+              </div>
+              <span class="member-profile-name">Bob</span>
+            </div>
+            <div class="member-container">
+              <div class="member-profile-container">
+                <img class="member-profile-icon" src="../images/story/story03.jpeg" alt="me"></img>
+                <div class="member-profile-icon-back"></div>
+              </div>
+              <span class="member-profile-name">Mike</span>
+            </div>
+            <div class="member-container">
+              <div class="member-profile-container">
+                <img class="member-profile-icon" src="../images/story/story04.png" alt="me"></img>
+                <div class="member-profile-icon-back"></div>
+              </div>
+              <span class="member-profile-name">James</span>
+            </div>
+            <div class="member-container">
+              <div class="member-profile-container">
+                <img class="member-profile-icon" src="../images/story/story05.jpeg" alt="me"></img>
+                <div class="member-profile-icon-back"></div>
+              </div>
+              <span class="member-profile-name">Lucas</span>
+            </div>
+            <div class="member-container">
+              <div class="member-profile-container">
+                <img class="member-profile-icon" src="../images/story/story06.jpeg" alt="me"></img>
+                <div class="member-profile-icon-back"></div>
+              </div>
+              <span class="member-profile-name">Amelia</span>
+            </div>
+
+            <div class="member-container">
+              <div class="member-profile-container">
+                <img class="member-profile-icon" src="../images/story/story07.jpeg" alt="me"></img>
+                <div class="member-profile-icon-back"></div>
+              </div>
+              <span class="member-profile-name">Luna</span>
+            </div>
+            
+          </div>
+          <div id="newsfeed"></div>
+        </main>
+        <aside class="aside">
+          <div class="profile">
+            <div class="profile-container">
+              <div class="profile-user-container">
+                <div class="profile-icon-container">
+                  <img class="profile-icon" src="" alt="me"></img>
+                  <!-- <div class="profile-icon-back"></div> -->
+                </div>
+                <div class="profile-name-container">
+                  <span class="aside-me"></span>
+                  <span class="profile-sub-name">ten_house</span>
+                </div>
+              </div>
+              <a href="#" class="profile-a change-btn">切り替える</a>
+            </div>
+            <div class="profile-container">
+              <span class="profile-how-name">おすすめ</span>
+              <span class="profile-all">すべて見る</span>
+            </div>
+            <div class="profile-container">
+              <div class="profile-user-container">
+                <div class="profile-icon-container">
+                  <img class="profile-icon" src="../images/profile/profile02.png" alt="me"></img>
+                  <!-- <div class="profile-icon-back"></div> -->
+                </div>
+                <div class="profile-name-container">
+                  <span>カナちゃん</span>
+                  <span class="profile-sub-name">おすすめ</span>
+                </div>
+              </div>
+              <a href="#" class="profile-a">フォローする</a>
+            </div>
+            <div class="profile-container">
+              <div class="profile-user-container">
+                <div class="profile-icon-container">
+                  <img class="profile-icon" src="../images/profile/profile03.webp" alt="me"></img>
+                  <!-- <div class="profile-icon-back"></div> -->
+                </div>
+                <div class="profile-name-container">
+                  <span>ヒロミ</span>
+                  <span class="profile-sub-name">あなたをフォロー中です</span>
+                </div>
+              </div>
+              <a href="#" class="profile-a">フォローする</a>
+            </div>
+            <div class="profile-container">
+              <div class="profile-user-container">
+                <div class="profile-icon-container">
+                  <img class="profile-icon" src="../images/profile/profile04.png" alt="me"></img>
+                  <!-- <div class="profile-icon-back"></div> -->
+                </div>
+                <div class="profile-name-container">
+                  <span>ムネリン</span>
+                  <span class="profile-sub-name">おすすめ</span>
+                </div>
+              </div>
+              <a href="#" class="profile-a">フォローする</a>
+            </div>
+            <div class="profile-container">
+              <div class="profile-user-container">
+                <div class="profile-icon-container">
+                  <img class="profile-icon" src="../images/profile/profile05.png" alt="me"></img>
+                  <!-- <div class="profile-icon-back"></div> -->
+                </div>
+                <div class="profile-name-container">
+                  <span>たかし</span>
+                  <span class="profile-sub-name">おすすめ</span>
+                </div>
+              </div>
+              <a href="#" class="profile-a">フォローする</a>
+            </div>
+            <div class="profile-container">
+              <div class="profile-user-container">
+                <div class="profile-icon-container">
+                  <img class="profile-icon" src="../images/profile/profile06.jpeg" alt="me"></img>
+                  <!-- <div class="profile-icon-back"></div> -->
+                </div>
+                <div class="profile-name-container">
+                  <span>キヨコ</span>
+                  <span class="profile-sub-name">おすすめ</span>
+                </div>
+              </div>
+              <a href="#" class="profile-a">フォローする</a>
+            </div>
+          </div>
+          <footer class="footer">
+            
+            <p class="footer-link-p">
+              <a class="footer-link" href="#">基本データ</a>
+              
+              <a class="footer-link" href="">ヘルプ</a>
+              ･
+              <a class="footer-link" href="">プレス</a>
+              ･
+              <a class="footer-link" href="">API</a>
+              ･
+              <a class="footer-link" href="">求人</a>
+              ･<br>
+              <a class="footer-link" href="">プライバシー</a>
+              ･
+              <a class="footer-link" href="">利用規約</a>
+              ･
+              <a class="footer-link" href="">所在地</a>
+              ･
+              <a class="footer-link" href="">言語</a>
+              ･
+              <a class="footer-link" href="">Meta認証</a>
+
+            </p>
+            <span class="footer-copyright">@ 2024 KIYOTAGRSAM FROM DIG</span>
+          </footer>
+        </aside>
+      </div>
+    </div>
+    
+    <div class="overlay hidden">
+      <button class="close-modal">&times;</button> <!-- モーダルを閉じるボタン -->
+    </div>
+    
+    <div class="modal hidden">
+      <!-- モーダル-->
+      <div class="modal-container">
+
+        <div class="modal-title-container">
+          <h1 class="modal-title">新規投稿を作成</h1>
+          <hr class="modal-hr1">
+        </div>
+        <textarea class="modal-text" cols="40" rows="15"></textarea>
+        <input type="file" name="upload-file" class="upload-file">
+        <button class="modal-btn">送信する</button>
+      
+      </div>
+
+    </div>
+  
+  </div>
+  </body>
+  <script src="https://kit.fontawesome.com/ac5282b9a0.js" crossorigin="anonymous"></script>
+  </html>
